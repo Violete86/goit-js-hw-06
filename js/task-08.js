@@ -12,6 +12,10 @@ if (email.value === "" || password.value === "") {
     alert("Please fill in all the fields!");
 }
 
-console.log(`Email: ${email.value}, Password: ${password.value}`);
+const dataArray = [];
+  dataArray.push(email.value);
+  dataArray.push(password.value);
+
+  console.log(dataArray);
 event.currentTarget.reset();
 }
