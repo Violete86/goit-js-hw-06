@@ -1,7 +1,7 @@
 
 
 const itemEl= document.querySelectorAll('.item');
-console.log(itemEl);
+
  console.log(`Number of categories: ${itemEl.length}`);
 
 itemEl.forEach(element => {
