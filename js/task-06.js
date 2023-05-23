@@ -7,10 +7,12 @@ input.addEventListener('blur', (event) => {
    if(inputLength === 6){
   event.target.classList.remove("invalid");
   event.target.classList.add("valid");
+  return;
 
-} else  if(inputLength === 0)
+} else {
   event.target.classList.remove('valid');
-  
-  else 
-   event.target.classList.add("invalid");
+  event.target.classList.add("invalid");
+}
 }); 
+
+

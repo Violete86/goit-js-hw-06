@@ -9,7 +9,7 @@ btnCreate.addEventListener('click', createBoxes);
 
 function createBoxes (amount) {
   let amountEl = document.querySelector('input').value;
-for (let i = 1, i <= amountEl; i += 1) {
+for (let i = 1; i <= amountEl; i += 1) {
   const childDiv = document.querySelector('div');
   parentDiv.append(childDiv);
   childDiv.textContent = "Child" + i;
